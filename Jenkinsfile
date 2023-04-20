@@ -5,7 +5,11 @@ pipeline {
             steps {
                 bat 'xcopy a.html "C:/xampp/htdocs/" /Y /F'
                 bat 'xcopy b.html "C:/xampp/htdocs/" /Y /F'
-        
+            }
+        }
+        stage('echo done') {
+            steps {
+                echo 'Done!'
             }
         }
     }
