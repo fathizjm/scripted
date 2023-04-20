@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Deploy to XAMPP server') {
             steps {
-                bat 'copy a.html "C:/xampp/htdocs/"'
-                bat 'copy b.html "C:/xampp/htdocs/"'
+                bat 'xcopy a.html "C:/xampp/htdocs/" /Y'
+                bat 'xcopy b.html "C:/xampp/htdocs/" /Y'
         
             }
         }
